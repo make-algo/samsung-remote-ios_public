@@ -70,25 +70,28 @@ main {
 }
 
 .hero {
-  min-height: 58vh;
+  min-height: 56vh;
   display: grid;
-  grid-template-columns: minmax(0, 0.84fr) minmax(260px, 0.46fr);
+  grid-template-columns: minmax(0, 0.94fr) minmax(320px, 0.62fr);
   align-items: center;
   gap: clamp(28px, 6vw, 76px);
+  padding: clamp(22px, 4vw, 54px) 0 clamp(20px, 4vw, 44px);
 }
 
-.hero::after {
-  content: "";
-  width: min(100%, 340px);
-  aspect-ratio: 0.48;
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-visual {
   justify-self: center;
-  border: 1px solid #2b3231;
-  border-radius: 999px;
-  background:
-    radial-gradient(circle at 50% 18%, #f7fbf7 0 6%, transparent 6.5%),
-    radial-gradient(circle at 50% 34%, #141719 0 13%, transparent 13.5%),
-    radial-gradient(circle at 50% 34%, transparent 0 7%, #f4f8f4 7.4% 10.4%, transparent 10.8%),
-    linear-gradient(180deg, #242a29 0%, #121516 100%);
+  width: min(100%, 430px);
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
   box-shadow: var(--shadow);
 }
 
@@ -121,9 +124,9 @@ main {
 h1 {
   max-width: 780px;
   margin: 0;
-  font-size: clamp(3rem, 8vw, 6.6rem);
+  font-size: clamp(3rem, 7.3vw, 6rem);
   letter-spacing: 0;
-  line-height: 0.93;
+  line-height: 0.98;
 }
 
 .tagline {
@@ -243,8 +246,8 @@ h1 {
     padding-top: 18px;
   }
 
-  .hero::after {
-    width: min(68vw, 260px);
+  .hero-visual {
+    width: min(76vw, 360px);
     order: -1;
   }
 

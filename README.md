@@ -1,4 +1,4 @@
-# Samsung Remote Public Pages
+# iOS TV Remote Public Pages
 
 Static marketing, privacy, terms, and support pages for App Store review and public distribution.
 
